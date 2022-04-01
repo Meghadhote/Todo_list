@@ -6,10 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
 using Todo_WebApplication.Helper;
-
-
 using Todo.Models;
 using System.Diagnostics;
 
@@ -98,6 +95,8 @@ namespace Todo_WebApplication.Controllers
                 ModelState.AddModelError("Description", "The description cannot exactly match the Name");
             }
             //check the duplicate
+             
+
 
             if (ModelState.IsValid)
             {
